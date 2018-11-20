@@ -1,6 +1,6 @@
 # LEX PROGRAMS
 
-## Introductions
+## Introduction
 
 The lex utility parses a file of characters. It uses regular expression matching; typically it is used to "tokenize" the contents of the file.
 
@@ -11,11 +11,11 @@ It is often used together with the `yacc` utility.
 There are 3 parts to a LEX program.
 
 `
-... Global Declaration ... \
+... Global Declaration ...  
 %%
-... Rules (Regular Expressions) .. \
+... Rules (Regular Expressions) ...  
 %%
-... Source Code ... \
+... Source Code ...  
 `
 
 -  Example
@@ -41,13 +41,13 @@ int main()  {
 
 `
 
-Filename: `count.l` \
-To Build an executable, we run: \
+Filename: `count.l`  
+To Build an executable, we run:  
 
 `
-lex -t count.l > count.c \
-cc -c -o count.o count.l \
-cc -o counter count.o -ll \
+lex -t count.l > count.c  
+cc -c -o count.o count.l  
+cc -o counter count.o -ll  
 `
 
 
