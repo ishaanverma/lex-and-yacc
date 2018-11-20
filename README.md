@@ -10,17 +10,17 @@ It is often used together with the `yacc` utility.
 
 There are 3 parts to a LEX program.
 
-`
+```
 ... Global Declaration ...  
 %%
 ... Rules (Regular Expressions) ...  
 %%
 ... Source Code ...  
-`
+```
 
 -  Example
 
-`
+```
 
 %{
   int charcount=0, linecount=0;
@@ -39,16 +39,16 @@ int main()  {
   return 0;
 }
 
-`
+```
 
 Filename: `count.l`  
 To Build an executable, we run:  
 
-`
+```
 lex -t count.l > count.c  
 cc -c -o count.o count.l  
 cc -o counter count.o -ll  
-`
+```
 
 
 
